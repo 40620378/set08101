@@ -7,14 +7,22 @@ nav{background: rgba(140, 140, 140, 0.3);
     height:10vh;
 }
 
+body {
+    background-image: url('../Images/car.jpg');
+    background-size: cover;
+  }
+
 #carhome {
     height: 100vh;
     width: 100vh;
-    z-index: -1;
 }
 
-#burgerbutton {
+.navimgbuttons {
     height: 8vh;
     width: 8vh;
     padding: 1vh
+}
+
+#searchicon {
+    float:right
 }
