@@ -3,20 +3,18 @@
 /* margin and padding values are implemented when viewing pages. */
 * {margin:0;padding:0}
 
-nav{background: rgba(140, 140, 140, 0.3);
+nav{background-color: rgba(255, 255, 255, 0.5);
     height:10vh;
 }
 
-body {
-    background-image: url('../Images/car.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    
-  }
-
-#carhome {
+#carHome {
+    object-fit: cover;
+    width: 100vw;
     height: 100vh;
-    width: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .navimgbuttons {
@@ -79,15 +77,36 @@ body {
     animation: fadeIn 1s ease-in forwards;
 }
 
-@media (min-aspect-ratio: 16/9) {
-    video {
-      width: 100%;
-      height: auto;
-    }
-  }
-  @media (max-aspect-ratio: 16/9) {
-    video {
-      width: auto;
-      height: 100%;
-    }
-  }
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
