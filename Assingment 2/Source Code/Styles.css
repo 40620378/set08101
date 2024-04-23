@@ -130,5 +130,18 @@ nav{background-color: rgba(255, 255, 255, 0);
     background-color: azure;
     margin:1%;
     border-radius: 5% ;
+    position: relative;
 }
 
+.playButton{
+    width: 15%;
+    margin-left: 42.5%;
+    margin-right: 42.5%;
+    background-color:rgb(113, 212, 66);
+    position: absolute;
+    bottom:0;
+}
+
+.center {
+    margin-left: 40%;
+  }
