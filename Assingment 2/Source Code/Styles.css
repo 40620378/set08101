@@ -38,8 +38,8 @@ nav{background-color: rgba(255, 255, 255, 0);
     border: 2px solid #ccc;
   }
 
-  .splash{
-    position:fixed;
+  .splash {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -49,22 +49,15 @@ nav{background-color: rgba(255, 255, 255, 0);
     color: white;
     text-align: center;
     line-height: 90vh;
+    opacity: 1; /* Ensure initial opacity */
+    transition: opacity 1s ease-in-out; /* Define transition for opacity */
 }
 
-.splash.display-none{
-    position:fixed;
+.splash.display-none {
     opacity: 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: black;
-    z-index: -10;
-    color: white;
-    text-align: center;
-    line-height: 90vh;
-    transition: all 0.5s;
+    z-index: -100;
 }
+
 
 @keyframes fadeIn{
     to{
@@ -127,21 +120,202 @@ nav{background-color: rgba(255, 255, 255, 0);
 .flex-items {
     width: 35%;
     height: 70vh;
-    background-color: azure;
+    background-color:white;
     margin:1%;
     border-radius: 5% ;
     position: relative;
 }
 
 .playButton{
-    width: 15%;
-    margin-left: 42.5%;
+    width: 30%;
+    margin-left: 35%;
     margin-right: 42.5%;
     background-color:rgb(113, 212, 66);
-    position: absolute;
+    position: relative;
     bottom:0;
 }
 
 .center {
     margin-left: 40%;
   }
+
+  .section {
+    background-color: white;
+    height: auto;
+    margin: 3vh;
+    border: solid;
+    padding: 1vh;
+  }
+
+  .carLogo {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  
+  }
+
+.section h1,
+.section p {
+  text-align: center;
+} 
+
+.section p {
+  text-align: center;
+}
+
+.carButton{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+
+
+.models-container {
+  display: none;
+}
+
+.model {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.model img {
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.description {
+  flex: 1;
+}
+
+
+
+
+.slideshow-container {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.slide {
+  display: none;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
+
+.flex-container h1 {
+  text-align: center;
+  font-size: 2em;
+  padding: 0.75vh
+}
+
+
+
+#homecontainer{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 3em
+}
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+#inline{
+  display: inline;
+}

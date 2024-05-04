@@ -1,0 +1,195 @@
+/* The Universal Selector has been used here to cancel the browser default margins and */
+/* padding for every page element.  This ensures that only assigned */
+/* margin and padding values are implemented when viewing pages. */
+* {margin:0;padding:0}
+
+nav{background-color: rgba(255, 255, 255, 0);
+    height:10vh;
+}
+
+#carHome {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.navimgbuttons {
+    height: 8vh;
+    width: 8vh;
+    padding: 1vh
+}
+
+#searchicon {
+    float:right
+}
+
+#navsearch {
+    float: right;
+    height: 4vh;
+    width: 8vw; 
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    border: 2px solid #ccc;
+  }
+
+  .splash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgb(159, 157, 157);
+    z-index: 200;
+    color: white;
+    text-align: center;
+    line-height: 90vh;
+    opacity: 1; /* Ensure initial opacity */
+    transition: opacity 1s ease-in-out; /* Define transition for opacity */
+}
+
+.splash.display-none {
+    opacity: 0;
+    z-index: -100;
+}
+
+
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+}
+
+.fade-in{
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 1);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    height: 73%;
+    width: 90%;
+    background-color:  rgba(163, 157, 157, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 3%
+  }
+
+.flex-items {
+    width: 35%;
+    height: 70vh;
+    background-color: azure;
+    margin:1%;
+    border-radius: 5% ;
+    position: relative;
+}
+
+.playButton{
+    width: 15%;
+    margin-left: 42.5%;
+    margin-right: 42.5%;
+    background-color:rgb(113, 212, 66);
+    position: absolute;
+    bottom:0;
+}
+
+.center {
+    margin-left: 40%;
+  }
+
+  .section {
+    background-color: white;
+    height: auto;
+    margin: 3vh;
+    border: solid;
+    padding: 1vh;
+  }
+
+  .carLogo {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  
+  }
+
+.section h1,
+.section p {
+  text-align: center;
+} 
+
+.section p {
+  text-align: center;
+}
+
+.carButton{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+
+
+.models-container {
+  display: none;
+}
+
+.model {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.model img {
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.description {
+  flex: 1;
+}
+
