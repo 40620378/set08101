@@ -76,7 +76,7 @@ function openNav() {
 
 
 
-
+//sets the slideindex variable as one to initialise it
   let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -90,6 +90,7 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
+//the fucntion that displays the images in a slideshow and detects if there is another to displays and off not loops to the first one again.
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
